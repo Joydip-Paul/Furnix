@@ -86,12 +86,17 @@ ul {
 .title {
   font-size: 36px;
   color: #141414;
+}
+
+.title-line {
+  font-size: 36px;
+  color: #141414;
   position: relative;
   display: inline-block;
   padding-right: 80px;
 }
 
-.title:after {
+.title-line:after {
   content: "";
   position: absolute;
   right: 0;
@@ -434,5 +439,138 @@ ul {
 
 .product-card .pd-img-6 .product-content p {
   width: 90%;
+}
+
+.full-width-banner {
+  background: url("/assets/Img/sofa1.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.about-us small {
+  font-size: 16px;
+}
+
+.about-us .para {
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+}
+
+.about-us .para :first-child {
+  text-align: right;
+}
+
+.about-us .para .line {
+  height: 100px;
+  width: 1px;
+  background-color: #141414;
+}
+
+.about-us a {
+  text-decoration: none;
+  padding: 16px 40px;
+  border: 1px solid #777777;
+  color: #141414;
+  font-size: 16px;
+  background: none;
+}
+
+.furniture-icon .icon-grid {
+  padding-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.furniture-icon .icon-grid .single-grid {
+  border: 1px solid #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.furniture-icon .icon-grid .single-grid:hover {
+  border-color: #ddd;
+}
+
+.furniture-icon .icon-grid .single-grid img {
+  width: 50px;
+}
+
+.furniture-icon .icon-grid .single-grid small {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #808080;
+}
+
+.family-furni-card {
+  padding-top: 100px;
+}
+
+.family-furni-card .single-card {
+  margin: 10px;
+}
+
+.family-furni-card .single-card .img-box {
+  overflow: hidden;
+}
+
+.family-furni-card .single-card .img-box img {
+  width: 100%;
+  height: 320px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.family-furni-card .single-card .img-box img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.family-furni-card .single-card .card-des {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.family-furni-card .single-card .card-des small {
+  display: block;
+  font-size: 20px;
+}
+
+.family-furni-card .single-card .card-des a {
+  text-decoration: none;
+  color: #141414;
+  font-size: 14px;
+}
+
+.family-furni-card .single-card .card-des a img {
+  width: 14px;
 }
 /*# sourceMappingURL=style.css.map */
