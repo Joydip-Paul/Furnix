@@ -1,0 +1,37 @@
+.nav-area {
+    position: fixed;
+    background: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+    .navbar {
+        .navbar-brand {
+            color: #141414;
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+
+        .navbar-nav {
+            li {
+                margin: 0 20px;
+
+                a {
+                    color: #141414;
+                    font-size: 18px;
+
+                    &:hover {
+                        color: #919191;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.fixed-top {
+    transition: 1s;
+    background-color: #fff;
+    box-shadow: #959da538 0px 2px 54px;
+}

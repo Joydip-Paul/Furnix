@@ -1,0 +1,99 @@
+/*
+//////////////////////////////
+Website Name: Furnix
+Developer: Joydip Paul - Email: joydippaul72@gmail.com
+Description: Furnix Project
+Version: 1.0
+/////////////////////////////
+/// 
+/* 1. Theme default css */
+
+@import "./variable";
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1E335D;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FFB048;
+}
+
+::selection {
+    color: #fff;
+    background: #233443;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+p {
+    color: #333333A3;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pt-200 {
+    padding-top: 200px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.pb-200 {
+    padding-bottom: 200px;
+}
+
+.title {
+    font-size: 36px;
+    color: $theme-black;
+    position: relative;
+    display: inline-block;
+    padding-right: 80px;
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 2px;
+        width: 60px;
+        background-color: #1E335D;
+    }
+}

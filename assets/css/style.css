@@ -1,0 +1,438 @@
+/*
+//////////////////////////////
+Website Name: Furnix
+Developer: Joydip Paul - Email: joydippaul72@gmail.com
+Description: Furnix Project
+Version: 1.0
+/////////////////////////////
+/// 
+/* 1. Theme default css */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E335D;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFB048;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #233443;
+}
+
+::selection {
+  color: #fff;
+  background: #233443;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+p {
+  color: #333333A3;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pt-200 {
+  padding-top: 200px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.pb-200 {
+  padding-bottom: 200px;
+}
+
+.title {
+  font-size: 36px;
+  color: #141414;
+  position: relative;
+  display: inline-block;
+  padding-right: 80px;
+}
+
+.title:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 2px;
+  width: 60px;
+  background-color: #1E335D;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  padding: 0;
+}
+
+/* ===================================
+   Media Queries
+====================================== */
+@media only screen and (max-width: 992px) {
+  .nav-area {
+    background-color: #93B5C6;
+  }
+  .nav-area .navbar-nav li {
+    margin: 0 !important;
+    border-bottom: 1px solid #ceebf9;
+  }
+  .fixed-top .navbar .navbar-brand {
+    color: #141414 !important;
+  }
+  .fixed-top .navbar .navbar-nav li a {
+    color: #141414 !important;
+  }
+}
+
+.nav-area {
+  position: fixed;
+  background: none;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.nav-area .navbar .navbar-brand {
+  color: #141414;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.nav-area .navbar .navbar-nav li {
+  margin: 0 20px;
+}
+
+.nav-area .navbar .navbar-nav li a {
+  color: #141414;
+  font-size: 18px;
+}
+
+.nav-area .navbar .navbar-nav li a:hover {
+  color: #919191;
+}
+
+.fixed-top {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #fff;
+  -webkit-box-shadow: #959da538 0px 2px 54px;
+          box-shadow: #959da538 0px 2px 54px;
+}
+
+.hero-area {
+  background-color: #f4f9f9a1;
+  position: relative;
+}
+
+.hero-area .hero-shape,
+.hero-area .hero-shape-2 {
+  position: absolute;
+  width: 500px;
+  height: 600px;
+  background-color: #daeaf16b;
+  z-index: -1;
+}
+
+.hero-area .hero-shape {
+  top: 0;
+  right: 0;
+}
+
+.hero-area .hero-shape-2 {
+  bottom: 0;
+  left: 0;
+}
+
+.hero-area .hero-content {
+  padding-top: 200px;
+}
+
+.hero-area .hero-content .product-des li {
+  margin: 25px 0;
+  line-height: 10px;
+}
+
+.hero-area .hero-content .product-des li h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hero-area .hero-content .product-des li small {
+  color: #808080;
+  font-size: 14px;
+}
+
+.hero-area .hero-content .hero-social {
+  padding-top: 100px;
+}
+
+.hero-area .hero-content .hero-social li {
+  margin: 20px 0;
+  font-size: 16px;
+  position: relative;
+}
+
+.hero-area .hero-content .hero-social li a {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  color: #141414;
+}
+
+.hero-area .hero-content .hero-social .line {
+  height: 200px;
+  width: 1px;
+  background-color: #808080;
+  margin-left: 8px;
+}
+
+.hero-area .hero-content .hero-details h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero-area .hero-content .hero-details p {
+  width: 60%;
+  margin: 30px 0;
+}
+
+.hero-area .hero-content .hero-details a {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.hero-area .hero-content .hero-details a img {
+  width: 16px;
+}
+
+.hero-area .hero-content .hero-img {
+  margin-top: 100px;
+}
+
+.hero-area .hero-content .hero-img small {
+  position: relative;
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+
+.hero-area .hero-content .hero-img small::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 30px;
+  background: #141414;
+}
+
+.hero-area .hero-content .hero-img p {
+  font-size: 14px;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.hero-area .hero-content .hero-img .single-img {
+  margin: 0 8px;
+}
+
+.hero-area .hero-content .hero-img .single-img img {
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero-area .hero-content .owl-nav button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+  margin-top: 20px;
+}
+
+.hero-area .hero-content .owl-nav button.owl-prev {
+  left: 10px;
+}
+
+.hero-area .hero-content .owl-nav button.owl-prev span {
+  font-size: 48px;
+}
+
+.hero-area .hero-content .owl-nav button.owl-next {
+  right: 10px;
+}
+
+.hero-area .hero-content .owl-nav button.owl-next span {
+  font-size: 48px;
+}
+
+.hero-area .hero-content .owl-dots {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.hero-area .hero-content .owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+
+.hero-area .hero-content .owl-dots button.owl-dot.active {
+  background-color: #000;
+}
+
+.hero-area .hero-content .hero-right-vertical {
+  position: relative;
+  left: 150px;
+}
+
+.hero-area .hero-content .hero-right-vertical li {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  letter-spacing: 4px;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.product-card {
+  padding-top: 120px;
+}
+
+.product-card .second-col {
+  position: relative;
+  left: 140px;
+}
+
+.product-card .product-details .product-img {
+  width: 468px;
+}
+
+.product-card .product-details .product-img img {
+  width: 100%;
+}
+
+.product-card .product-details .product-content {
+  margin: 60px 0;
+}
+
+.product-card .product-details .product-content h4 {
+  font-size: 26px;
+}
+
+.product-card .product-details .product-content p {
+  width: 60%;
+  margin: 30px 0;
+}
+
+.product-card .product-details .product-content a {
+  text-decoration: none;
+  padding: 16px 40px;
+  border: 1px solid #777777;
+  color: #141414;
+  font-size: 16px;
+  background: none;
+}
+
+.product-card .product-details .pd-img-2 {
+  padding-top: 120px;
+  width: 600px;
+}
+
+.product-card .product-details .pd-img-3 {
+  padding-top: 240px;
+  width: 300px;
+}
+
+.product-card .product-details .pd-img-4 {
+  padding-top: 180px;
+}
+
+.product-card .product-details .pd-img-5 {
+  padding-top: 220px;
+}
+
+.product-card .pd-img-6 {
+  padding-top: 168px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  position: relative;
+  left: -170px;
+}
+
+.product-card .pd-img-6 .product-img {
+  width: 800px;
+}
+
+.product-card .pd-img-6 .product-content {
+  position: relative;
+  top: 185px;
+  width: 100%;
+}
+
+.product-card .pd-img-6 .product-content p {
+  width: 90%;
+}
+/*# sourceMappingURL=style.css.map */
