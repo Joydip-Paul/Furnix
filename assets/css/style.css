@@ -108,6 +108,10 @@ ul {
   background-color: #1E335D;
 }
 
+.section-bg {
+  background-color: #F6F6F6;
+}
+
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -572,5 +576,42 @@ ul {
 
 .family-furni-card .single-card .card-des a img {
   width: 14px;
+}
+
+.footer-area {
+  background-color: #fff;
+  padding: 100px 0 10px 0;
+}
+
+.footer-area .footer-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 20% 20% 30%;
+      grid-template-columns: 30% 20% 20% 30%;
+  grid-gap: 50px;
+}
+
+.footer-area .footer-grid .single-footer h4 {
+  font-size: 18px;
+}
+
+.footer-area .footer-grid .single-footer ul {
+  padding-top: 30px;
+}
+
+.footer-area .footer-grid .single-footer ul li {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.footer-area .footer-grid .single-footer ul li a {
+  text-decoration: none;
+  color: #7C818D;
+}
+
+.footer-area .footer-grid .single-footer address {
+  padding-top: 30px;
+  color: #7C818D;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */

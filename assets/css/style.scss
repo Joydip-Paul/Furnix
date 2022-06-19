@@ -71,6 +71,7 @@
 
 .family-furni-card {
     padding-top: 100px;
+
     .single-card {
         margin: 10px;
 
@@ -106,6 +107,42 @@
                 img {
                     width: 14px;
                 }
+            }
+        }
+    }
+}
+
+.footer-area {
+    background-color: #fff;
+    padding: 100px 0 10px 0;
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 30% 20% 20% 30%;
+        grid-gap: 50px;
+
+        .single-footer {
+            h4 {
+                font-size: 18px;
+            }
+
+            ul {
+                padding-top: 30px;
+
+                li {
+                    margin-bottom: 16px;
+                    font-size: 16px;
+
+                    a {
+                        text-decoration: none;
+                        color: #7C818D;
+                    }
+                }
+            }
+            address{
+                padding-top: 30px;
+                color: #7C818D;
+                font-size: 16px;
             }
         }
     }
