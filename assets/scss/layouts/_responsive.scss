@@ -7,38 +7,3 @@
     border: none;
     padding: 0;
 }
-
-/* ===================================
-   Media Queries
-====================================== */
-
-@media only screen and (max-width: 1400px) {}
-
-@media only screen and (max-width: 992px) {
-    .nav-area {
-        background-color: #93B5C6;
-
-        .navbar-nav {
-            li {
-                margin: 0 !important;
-                border-bottom: 1px solid #ceebf9;
-            }
-        }
-    }
-
-    .fixed-top {
-        .navbar {
-            .navbar-brand {
-                color: #141414 !important;
-            }
-
-            .navbar-nav {
-                li {
-                    a {
-                        color: #141414 !important;
-                    }
-                }
-            }
-        }
-    }
-}
